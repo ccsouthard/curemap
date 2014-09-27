@@ -1,0 +1,63 @@
+svg
+  fill transparent
+
+  image
+  	cursor pointer
+
+.country
+  stroke #fff
+  stroke-width .1px
+  stroke-linejoin round
+
+
+.hidden
+  display none
+
+
+.d3-tip
+  line-height 1
+  padding 5px 20px
+  background #fff
+  border-radius 2px
+  max-width 300px
+  font-size 70%
+  box-shadow 0 3px 14px rgba(0,0,0,.4)
+  a
+    word-break break-all
+    text-decoration underline
+
+  .close
+    position: absolute
+    right: 4px
+    top: -6px
+    font-size: 300%
+    cursor pointer
+
+  &:after
+    top 100%;
+    left 50%
+    border solid transparent
+    content " "
+    height 0
+    width 0
+    position absolute
+    pointer-events none
+    border-color rgba(255, 255, 255, 0)
+    border-top-color #fff
+    border-width 10px
+    margin-left -10px
+
+rect
+  fill none
+  pointer-events all
+
+#s
+  fill #808080
+
+
+path.pin
+  stroke black
+  stroke-width 23
+
+path.country.id10
+  display none

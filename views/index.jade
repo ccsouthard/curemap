@@ -1,14 +1,70 @@
-!= title_with_markup()
+include _splash.jade
+header.home
+    include _header.jade
+include _menu.jade
+main.home.page
 
-:markdown
-  **Whoo!** You got everything working. Now get to making cool things : )
+    #map
 
-p this file can be found in views/index.jade
+    #toggle
+        div.buttons
+            div.international.active
+                h2 international
 
-include _partial
+            div.usa
+                h2 usa
 
-:markdown
-  For help and documentation, check out [http://roots.cx](http://roots.cx)
+    #filters
 
-:coffeescript
-  console.log 'you can even use coffeescript in your views, aw yeah'
+        div.filter-label
+            label Jump To
+
+        div.filter
+            select#sponsor
+                option(value="") SPONSOR
+
+        div.filter
+            select#treatment
+                option(value="") TREATMENT
+
+        div.filter
+            select#location
+                option(value="") LOCATION
+
+        div.filter
+            select#phase
+                option(value="") #PHASE
+
+    #links
+
+        div.pin-icon
+            img(src="img/mark.png")
+
+        div.link
+            label neuralstem inc
+
+        div.link
+            label human spinal cord stem cells
+
+        div.link
+            label boston, ma  usa
+
+        div.link
+            label NCT01772810
+                span.yellow &nbsp;(Learn More)
+
+    #treatment-wrap
+        h2.posts-title Featured Treatments
+
+        ul#treatments
+            li
+                a(href="http://google.com"): img(src="img/post1.jpg")
+            li
+                a(href="http://google.com"): img(src="img/post2.jpg")
+            li
+                a(href="http://google.com"): img(src="img/post3.jpg")
+            li
+                a(href="http://google.com"): img(src="img/post4.jpg")
+
+
+footer

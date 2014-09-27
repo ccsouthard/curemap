@@ -1,0 +1,21 @@
+header
+    include _header.jade
+include _menu.jade
+#sub-header
+    h2.post-title Blog
+main.page
+    #blog-archive
+
+        ul#posts
+            - sort(site.posts, { by: 'date' })
+            - sort(site.posts, { order: 'asc' })
+            - each post in site.posts
+                li
+                    div.blogicon
+                        img(src='/img/single-post-logo.svg', height='40')
+                    div.date= formatDate(post.date)
+                    h1
+                        a(href="#{post.url}")= post.title
+
+                    div.content
+                        !=post.excerpt
