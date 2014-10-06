@@ -8,7 +8,7 @@ main
   #toggle
     width 100%
     margin-bottom 20px
-    cf()
+    group()
     .buttons
       div
         float right
@@ -21,7 +21,7 @@ main
         box-shadow 5px 6px 5px 0px rgba(250, 195, 45, 0.75)
 
   #filters
-    cf()
+    group()
     .filter-label
       column(1/9)
       @media only screen and (max-width : 700px)
@@ -42,7 +42,7 @@ main
         width 80%
 
   #links
-    cf()
+    group()
     font-size 63%
     margin 15px 0
     border-top  2px solid bordercolor
@@ -76,7 +76,7 @@ main
   ul#treatments
     list-style-type none
     padding 0
-    cf()
+    group()
     margin 0
     li
       column(1/4,cycle: 4)
@@ -232,4 +232,3 @@ aside
         &:after
           left 74px
           top -24px
-

@@ -1,23 +1,23 @@
 header
 
-    #menu-container
-        a(href='#') &#57349;
+  #menu-container
+    a(href='#') &#57349;
 
-    #title-container
-        img(src='/img/single-post-logo.svg', height='82')
+  #title-container
+    img(src='/img/single-post-logo.svg', height='82')
 
-    #page-title
-        h1 recent developments
+  #page-title
+    h1 recent developments
 
 #sub-header
-    div.date
-        time(datetime="#{post.date}")= formatDate(post.date)
-    h2.post-title= post.title
+  div.date
+    time(datetime="#{post.date}")= formatDate(post.date)
+  h2.post-title= post.title
 
 include _menu.jade
 
 
 main
-    #post-content
-        != content
-        a(href='/index.html') &laquo; back to index
+  #post-content
+    != content
+    a(href='/index.html') &laquo; back to index

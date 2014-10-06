@@ -1,18 +1,23 @@
-!!!
+doctype html
 html
     head
-        meta(charset='utf8')
-        meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
-        meta(name='description', content='description of your site')
-        meta(name='author', content= "author of the site")
+      meta(charset='utf8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+      meta(name='description', content='description of your site')
+      meta(name='author', content= "author of the site")
 
-        title= title
+      title= title
 
-        link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans|Stint+Ultra+Condensed')
-        link(rel='stylesheet', href='css/master.css')
+      link(rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans|Stint+Ultra+Condensed')
+      link(rel='stylesheet' href='css/master.css')
     body.home
+      block pre_header
 
-        != content
+      header
+        include _header.jade
 
-        //- add other scripts through require.js, not here
-        script(data-main="js/main", src="js/require.js")
+      include _menu.jade
+
+      block content
+
+      script(data-main="js/main", src="js/require.js")

@@ -2,3 +2,4 @@
 public
 *.zip
 .idea
+node_modules

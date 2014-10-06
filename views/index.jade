@@ -1,70 +1,67 @@
-include _splash.jade
-header.home
-    include _header.jade
-include _menu.jade
-main.home.page
+extends layout
 
+block pre_header
+  include _splash.jade
+
+block content
+  main.home.page
     #map
 
     #toggle
-        div.buttons
-            div.international.active
-                h2 international
+      .buttons
+        .international.active
+          h2 international
 
-            div.usa
-                h2 usa
+      .usa
+        h2 usa
 
     #filters
+      .filter-label
+        label Jump To
 
-        div.filter-label
-            label Jump To
+      .filter
+        select#sponsor
+          option(value="") SPONSOR
 
-        div.filter
-            select#sponsor
-                option(value="") SPONSOR
+      .filter
+        select#treatment
+          option(value="") TREATMENT
 
-        div.filter
-            select#treatment
-                option(value="") TREATMENT
+      .filter
+        select#location
+          option(value="") LOCATION
 
-        div.filter
-            select#location
-                option(value="") LOCATION
-
-        div.filter
-            select#phase
-                option(value="") #PHASE
+      .filter
+        select#phase
+          option(value="") #PHASE
 
     #links
+      .pin-icon
+        img(src="img/mark.png")
 
-        div.pin-icon
-            img(src="img/mark.png")
+      .link
+        label neuralstem inc
 
-        div.link
-            label neuralstem inc
+      .link
+        label human spinal cord stem cells
 
-        div.link
-            label human spinal cord stem cells
+      .link
+        label boston, ma  usa
 
-        div.link
-            label boston, ma  usa
-
-        div.link
-            label NCT01772810
-                span.yellow &nbsp;(Learn More)
+      .link
+        label NCT01772810
+          span.yellow &nbsp;(Learn More)
 
     #treatment-wrap
-        h2.posts-title Featured Treatments
+      h2.posts-title Featured Treatments
+      ul#treatments
+        li
+          a(href="http://google.com"): img(src="img/post1.jpg")
+        li
+          a(href="http://google.com"): img(src="img/post2.jpg")
+        li
+          a(href="http://google.com"): img(src="img/post3.jpg")
+        li
+          a(href="http://google.com"): img(src="img/post4.jpg")
 
-        ul#treatments
-            li
-                a(href="http://google.com"): img(src="img/post1.jpg")
-            li
-                a(href="http://google.com"): img(src="img/post2.jpg")
-            li
-                a(href="http://google.com"): img(src="img/post3.jpg")
-            li
-                a(href="http://google.com"): img(src="img/post4.jpg")
-
-
-footer
+  footer
