@@ -3,3 +3,4 @@ public
 *.zip
 .idea
 node_modules
+ship.conf
