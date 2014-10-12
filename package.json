@@ -8,7 +8,6 @@
     "dynamic-content": "0.0.3",
     "jade": "1.x",
     "marked": "0.3.x",
-    "roots": "^3.0.0-rc.10",
     "stylus": "0.48.x"
   }
 }

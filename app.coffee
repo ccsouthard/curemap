@@ -1,5 +1,5 @@
-axis         = require 'axis-css'
-autoprefixer = require 'autoprefixer-stylus'
+axis            = require 'axis-css'
+autoprefixer    = require 'autoprefixer-stylus'
 dynamic_content = require 'dynamic-content'
 
 module.exports =
