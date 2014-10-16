@@ -47,8 +47,9 @@ function setup() {
     .attr('class', 'd3-tip')
     .offset([-15, 0])
     .html(function(d) {
-      return '<p><b>Phase Number</b>: &nbsp;<a target="_blank" title="' + d.trial_link + '" href="' + d.trial_link + '">' + d.trial_id + '</a></p>' +
-             '<p><b>Sponsor</b>: &nbsp;' + d.sponsor + '</p>' +
+        return '<p><b>Phase Number</b>: &nbsp;<a target="_blank" href="' + d.trial_link + '">' + d.trial_id + '</a></p>' +
+           //  '<p><b>Phase Number</b>: &nbsp;<a target="_blank" title="' + d.trial_link + '" href="' + d.trial_link + '">' + d.trial_id + '</a></p>' +
+             '<p><b>Sponsored by</b>: &nbsp;' + d.sponsor + '</p>' +
              '<p><b>Treatment</b>: &nbsp;' + d.treatment + '</p>' +
              '<p><b>Location</b>: &nbsp;' + d.location + '</p>' +
              '<p><b>Company</b>: &nbsp;<a target="_blank" href="' + d.company_link + '">' + d.company_link + '</a></p>' +
