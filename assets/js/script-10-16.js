@@ -124,19 +124,19 @@ function draw() {
     .attr('xlink:href', 'img/marker1.svg')
     .attr('class', 'marker')
     .attr('data-sponsor', function(d) {
-      return $.trim(d.sponsor);
+      return d.sponsor;
     })
     .attr('data-treatment', function(d) {
-      return $.trim(d.treatment);
+      return d.treatment;
     })
     .attr('data-location', function(d) {
-      return $.trim(d.location);
+      return d.location;
     })
     .attr('data-phase', function(d) {
-      return $.trim(d.trial_id);
+      return d.trial_id;
     })
     .attr('data-country', function(d) {
-      return $.trim(d.iso_country);
+      return d.iso_country;
     })
     .attr('height', '26')
     .attr('width', '19')
