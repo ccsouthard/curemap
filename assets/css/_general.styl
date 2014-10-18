@@ -1,15 +1,18 @@
 body,p,span,a,select
   color text-color
   font-family 'Open Sans', sans-serif;
+  font-family: "Metro Nova W04 Light","Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight 400
 
 body
-  background url('/img/background.jpg') no-repeat center
+ // background url('/img/background.jpg') no-repeat center #F8F8F8
+  background: url('/img/white-texture.png') repeat-x top center;
   background-size cover
 
 h1, h2, h3, h4, h5, h6
   color header_color
   font-family 'Stint Ultra Condensed', sans-serif;
+  font-size 180%
   letter-spacing .1em
 
 h1, h2
@@ -28,7 +31,7 @@ select
   display  inline-block
   appearance none
   cursor pointer
-  font-weight 700
+  font-weight 400
 
   &:after
     content "\f0d7"
@@ -37,6 +40,10 @@ select
 
  .yellow
    color yellow
+
+blockquote
+  blockquote (red)
+  font-size 1.2em
 
 *
   box-sizing border-box
