@@ -162,10 +162,10 @@ function draw() {
     .attr('width', '19')
     .attr('x', '-9.5')
     .attr('y', '-26')
-    .on('click', function(d) {
+    .on('mousedown', function(d) {
       tip.hide();
       tip.show(d);
-      $('.d3-tip .close').on('click', function() {
+      $('.d3-tip .close').on('mousedown', function() {
         tip.hide();
       });
     })
